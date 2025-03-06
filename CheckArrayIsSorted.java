@@ -29,8 +29,6 @@ public class CheckArrayIsSorted {
             }
             if(flag)
             {
-
-                System.out.println("Flag value"+flag);
                 break;
             }
 
@@ -42,6 +40,8 @@ public class CheckArrayIsSorted {
         if(swap_cnt==0)
         {
             sorted=true;
+        }else {
+            sorted=false;
         }
       return sorted;
 
@@ -49,13 +49,16 @@ public class CheckArrayIsSorted {
 
     public static void main(String[] args) {
 
-        int arr[]={1,2,3,4,5,6};
+//        int arr[]={1,2,3,4,5,6};
+          int arr[]={2,1,3,4};
         CheckArrayIsSorted a=new CheckArrayIsSorted();
 
 //        System.out.println(a.isSort(arr));
         if(a.isSort(arr))
         {
             System.out.println("Array is already sorted");
+        }else {
+            System.out.println("Array is not  sorted");
         }
 
 

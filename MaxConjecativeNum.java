@@ -3,8 +3,8 @@ package problem_solving;
 public class MaxConjecativeNum {
 
     public static void main(String[] args) {
-      // int[] arr={1,1,0,1,1,1};
-        int[] arr={1,0,1,1,0,1};
+       int[] arr={1,1,0,1,1,1};
+       // int[] arr={1,0,1,1,0,1};
 
           int count =0;
           int temp=1;
@@ -26,6 +26,11 @@ public class MaxConjecativeNum {
              }
 
         }
+        if (temp > count) {
+            count = temp;
+            val = arr[arr.length - 1]; // Update the value
+        }
+
 
         System.out.println("Themp"+temp);
         System.out.println("Value is "+val);

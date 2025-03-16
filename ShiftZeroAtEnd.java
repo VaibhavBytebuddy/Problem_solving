@@ -83,6 +83,11 @@ public class ShiftZeroAtEnd {
         s.shiftZeroEfficent(nums);
 
 
+        System.out.println("Demo");
 
+        int arr[]=new int[2];
+        System.out.println(arr[0]);
     }
+
+
 }

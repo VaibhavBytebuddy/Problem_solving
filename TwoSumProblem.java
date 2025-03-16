@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 public class TwoSumProblem {
     public static void main(String[] args) {
         //2,7,11,15
-        //int[] arr={2, 7, 11, 15};
-        int[] arr={3,2,3};
+        int[] arr={2, 7, 11, 15};
+        //int[] arr={3,2,3};
         int k=6;
         int[] res={0,0};
         for(int i=0;i< arr.length;i++)

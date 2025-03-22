@@ -1,9 +1,4 @@
-package problem_solving;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.OptionalInt;
+package problem_solving.arrays;
 
 public class BestTimeToBuySellStock {
     public static void main(String[] args) {
@@ -13,8 +8,8 @@ public class BestTimeToBuySellStock {
 
         int profit=0;
         int min=Integer.MAX_VALUE;
-        int j=0;
-        boolean flag=true;
+
+
 
         for (int i = 0; i < arr.length ; i++)
         {

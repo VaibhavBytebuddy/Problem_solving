@@ -11,14 +11,14 @@ public class TwoSumProblem {
         //2,7,11,15
         int[] arr={2, 7, 11, 15};
         //int[] arr={3,2,3};
-        int target=6;
+        int k=6;
         int[] res={0,0};
         for(int i=0;i< arr.length;i++)
         {
             for(int j=i+1;j< arr.length;j++)
             {
                 int sum=arr[i]+arr[j];
-                if(sum==target)
+                if(sum==k)
                 {
                     res[0]=i;
                     res[1]=j;
@@ -35,7 +35,7 @@ public class TwoSumProblem {
         Map<Integer,Integer> m=new HashMap<>();
         for(int i=0;i< arr.length;i++)
         {
-            int com=target-arr[i];
+            int com=k-arr[i];
             if(m.containsKey(com))
             {
                  i1 = new int[]{m.get(com),i};

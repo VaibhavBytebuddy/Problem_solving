@@ -15,8 +15,19 @@ public class Factorial {
 
      fact(n-1,fact);//inner function
     }
+
+    public static int fact2(int n)
+    {
+        if(n==0)
+        {
+            return 1;
+        }
+        int fn=n*fact2(n-1);
+        return fn;
+    }
     public static void main(String[] args) {
 
         fact(3,1);
+        System.out.println("factorial is "+fact2(3));
     }
 }
